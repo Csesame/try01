@@ -11,7 +11,7 @@ const odaiArray = [
   "タイムマシンで過去に行ったら、恐竜が人々と一緒に何をしていた？",
 ];
 
-const odaiContainer = document.getElementById("odai-container");
+//const odaiContainer = document.getElementById("odai-container");
 const odaiText = document.getElementById("odai-text");
 
 // ランダムな大喜利を取得
@@ -20,11 +20,21 @@ function getRandomOdai() {
   return odaiArray[randomIndex];
 }
 
+window.onload = function () {
+  const odaiText = document.getElementById("odai-text");
+  if (odaiText) {
+    odaiText.textContent = getRandomOdai();
+  }
+  else {
+    console.error("要素が見つかりません: #odai-text");
+  }
+};
+
 // ランダムな大喜利を表示
-function displayRandomOdai() {
+/*function displayRandomOdai() {
   const randomOdai = getRandomOdai();
   odaiText.textContent = randomOdai;
 }
 
 // ページが読み込まれたときにランダムな大喜利を表示
-displayRandomOdai();
+displayRandomOdai();*/
