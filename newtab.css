@@ -1,0 +1,21 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.odai-wrapper {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#odai-text {
+  font-size: 24px;
+  text-align: center;
+}
