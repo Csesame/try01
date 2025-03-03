@@ -1,4 +1,15 @@
-"name":"Sample",
-"description":"お試し",
-"version":"1.0.0",
-"manifest_version":3,
+{
+  "manifest_version": 3,
+  "name": "フラッシュ大喜利: Flash Japanese Ogiri",
+  "description": "「フラッシュ大喜利」は、新しいタブを開くたびに、瞬時に楽しさが広がる拡張機能です。\nFlash Japanese Ogiri is an extension that instantly adds to the fun every time you open a new tab. ",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "overrides/newtab.html"
+  }
+}
